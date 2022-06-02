@@ -1,10 +1,10 @@
-package homework
+package main
 
 func average(input [15]float32) (result float32) {
-	sum := 0
-	for i := range input {
-		sum += i
+	var sum = float32(0)
+	for _, v := range input {
+		sum += v
 	}
-	result = float32(sum) / float32(len(input))
+	result = (float32(sum) / float32(len(input)))
 	return
 }
